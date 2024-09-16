@@ -1,0 +1,125 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.header {
+    margin-bottom: 30px;
+}
+
+/* Aadhaar Logo */
+.logo-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+}
+
+/* Emblem of India at the top-left corner */
+.emblem-logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+}
+
+/* Azadi logo centered at the top of the page */
+.azadi-logo {
+    position: absolute;
+    top: 20px; /* Distance from the top of the page */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.azadi-logo img {
+    width: 200px; /* Adjust the size of the logo as needed */
+    height: auto;
+}
+
+.emblem-logo img {
+    width: 80px; /* Adjust the size of the emblem as needed */
+    height: 110px;
+}
+
+.logo-container img {
+    width: 150px; /* Adjust the size of the logo as needed */
+    height: auto;
+}
+
+.header h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.header h2 {
+    font-size: 18px;
+    margin-top: 5px;
+    color: #333;
+}
+
+.login-box {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+
+.login-box h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button.login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0066CC;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button.login-button:hover {
+    background-color: #004C99;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #555;
+}
+
+/* Hide honeypot field */
+.honeypot {
+    display: none;
+}
